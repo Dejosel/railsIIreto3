@@ -24,7 +24,7 @@ class Api::V1::ProductsController < ApplicationController
       render json: { errors: product.errors }, status: 422
     end
   end
-  ​
+
   def destroy
     product = Product.find(params[:id])
     product.destroy
